@@ -1,0 +1,17 @@
+<div class="modal_head">
+    <i class="icon_close" onclick="common.modal_hide()"></i>
+</div>
+<div class="modal_body">
+    <div class="input_group_modal">
+        <div>The record is will deleted, are you sure?</div>
+        <input type="hidden" id="plot_id" value="{$user.plot_id}">
+    </div>
+    <div class="modal_controls">
+        <div>
+            <div class="btn_modal" id="save_user_data_i" onclick="common.user_delete({$user.plot_id});">Yes</div>
+        </div>
+        <div>
+            <div class="btn_modal light" onclick="common.modal_hide();">No</div>
+        </div>
+    </div>
+</div>
